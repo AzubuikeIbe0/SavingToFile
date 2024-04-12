@@ -28,13 +28,13 @@ int main()
     BinarySearchTree T2;
     BinarySearchTree T3;
 
-    T3.InsertNode(1);
-    T3.InsertNode(2);
-    T3.InsertNode(3);
-    T3.InsertNode(4);
     T3.InsertNode(5);
-    T3.InsertNode(6);
-    T3.InsertNode(7);
+    T3.InsertNode(2);
+    T3.InsertNode(13);
+    T3.InsertNode(4);
+    T3.InsertNode(25);
+    T3.InsertNode(16);
+    T3.InsertNode(37);
 
     
 
@@ -51,7 +51,7 @@ int main()
     // Serialize the BinarySearchTree object to a file
     ofstream outFile("A:/TU DUBLIN/Yr4/SEM_2/SavingToFile/bst.txt");
     if (outFile.is_open()) {
-        int result = T2.Serialize(outFile);
+        int result = T3.Serialize(outFile);
         if (result == -1)
             cout << "Serialization failed." << endl;
         else
